@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class AuthPage extends Component {
+export class AuthPage extends Component {
   render() {
     return (
         <div class="auth">
@@ -16,34 +16,29 @@ class AuthPage extends Component {
             </div>
             <form class="form">
               <input
-
                   type="text"
                   class="form__input"
                   placeholder="Email"
               />
               <input
-                  v-model="password"
                   type="password"
                   class="form__input"
                   placeholder="Password"
               />
               <a href="" type="submit" class="form__button">Login</a>
             </form>
-            <form v-else class="form">
+            <form class="form">
               <input
-                  v-model="name"
                   type="text"
                   class="form__input"
                   placeholder="Full Name"
               />
               <input
-                  v-model="email"
                   type="text"
                   class="form__input"
                   placeholder="Email"
               />
               <input
-
                   type="password"
                   class="form__input"
                   placeholder="Password"
@@ -59,6 +54,7 @@ class AuthPage extends Component {
           </div>
         </div>
     )
-
+  }
   };
-export default AuthPage;
+
+
