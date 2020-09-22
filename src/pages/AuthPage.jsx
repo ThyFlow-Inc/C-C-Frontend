@@ -1,7 +1,67 @@
 import React, { Component } from 'react'
 
+function Form(props) {
+      if (props.isLoggingActive){
+        return(
+            <form className="form">
+              <input
+                  type="text"
+                  className="form__input"
+                  placeholder="Full Name"
+              />
+              <input
+                  type="text"
+                  className="form__input"
+                  placeholder="Email"
+              />
+              <input
+                  type="password"
+                  className="form__input"
+                  placeholder="Password"
+              />
+              <a href="" type="submit" className="form__button">Sign Up</a>
+            </form>
+        )
+      }
+      return (
+          <form className="form">
+            <input
+                type="text"
+                className="form__input"
+                placeholder="Email"
+            />
+            <input
+                type="password"
+                className="form__input"
+                placeholder="Password"
+            />
+            <a href="" type="submit" className="form__button">Login</a>
+          </form>
+      )
+}
+
 export class AuthPage extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      isLoggingActive: true,
+    }
+  }
+
+  setLogin = () => {
+    this.setState({
+      isLoggingActive: true
+    })
+  };
+
+  setRegistration = () => {
+    this.setState({
+      isLoggingActive: false
+    })
+  };
+
   render() {
+
     return (
         <div class="auth">
           <div>&nbsp;</div>
@@ -11,40 +71,11 @@ export class AuthPage extends Component {
               We help you choose the best business provider easily
             </p>
             <div class="auth-toggle">
-              <a class="auth-login">Login</a>
-              <a class="auth-login">Sign Up</a>
+              <a class="auth-login" onClick={this.setLogin}>Login</a>
+              <a class="auth-login" onClick={this.setRegistration}>Sign Up</a>
             </div>
-            <form class="form">
-              <input
-                  type="text"
-                  class="form__input"
-                  placeholder="Email"
-              />
-              <input
-                  type="password"
-                  class="form__input"
-                  placeholder="Password"
-              />
-              <a href="" type="submit" class="form__button">Login</a>
-            </form>
-            <form class="form">
-              <input
-                  type="text"
-                  class="form__input"
-                  placeholder="Full Name"
-              />
-              <input
-                  type="text"
-                  class="form__input"
-                  placeholder="Email"
-              />
-              <input
-                  type="password"
-                  class="form__input"
-                  placeholder="Password"
-              />
-              <a href="" type="submit" class="form__button">Sign Up</a>
-            </form>
+            <Form value={this.state.isLoggingActive} />
+
             <div class="form__foot">
               <p class="form-paragraph">Or login with</p>
               <p class="form-social">Google</p>
