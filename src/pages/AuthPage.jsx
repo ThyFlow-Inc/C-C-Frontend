@@ -65,22 +65,22 @@ export class AuthPage extends Component {
     return (
         <div class="auth">
           <div>&nbsp;</div>
-          <div class="formpage">
-            <h2 class="form-heading">Deal with verified business Providers</h2>
-            <p class="form-paragraph">
+          <div className="formpage">
+            <h2 className="form-heading">Deal with verified business Providers</h2>
+            <p className="form-paragraph">
               We help you choose the best business provider easily
             </p>
-            <div class="auth-toggle">
-              <a class="auth-login" onClick={this.setLogin}>Login</a>
-              <a class="auth-login" onClick={this.setRegistration}>Sign Up</a>
+            <div className="auth-toggle">
+              <a className="auth-login" onClick={this.setLogin}>Login</a>
+              <a className="auth-login" onClick={this.setRegistration}>Sign Up</a>
             </div>
             <Form value={this.state.isLoggingActive} />
 
-            <div class="form__foot">
-              <p class="form-paragraph">Or login with</p>
-              <p class="form-social">Google</p>
-              <p class="form-social">Facebook</p>
-              <p class="form-social">Twitter</p>
+            <div className="form__foot">
+              <p className="form-paragraph">Or login with</p>
+              <p className="form-social">Google</p>
+              <p className="form-social">Facebook</p>
+              <p className="form-social">Twitter</p>
             </div>
           </div>
         </div>
