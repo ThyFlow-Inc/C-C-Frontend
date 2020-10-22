@@ -9,5 +9,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="React Redux" />
+    <orderEntry type="module" module-name="crwnshop" />
+    <orderEntry type="module" module-name="Pluralsight React" />
+    <orderEntry type="module" module-name="TimeLog" />
   </component>
 </module>
