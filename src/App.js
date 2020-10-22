@@ -1,6 +1,7 @@
 import React from 'react';
-import { AuthPage } from '../src/pages/AuthPage'
+import { AuthPage } from './pages/auth/AuthPage'
 import './App.scss';
+
 
 function App() {
   return (

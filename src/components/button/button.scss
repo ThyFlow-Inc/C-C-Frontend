@@ -1,0 +1,15 @@
+.form-button{
+    height: 4rem;
+    width: 10rem;
+    padding: 1rem 2rem;
+    background-color: rgb(20, 70, 209);
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 0.3rem;
+    display: block;
+    margin: 2rem 10rem;
+     @media screen and (max-width: 600px){
+    margin: 2rem 7rem;
+  }
+}

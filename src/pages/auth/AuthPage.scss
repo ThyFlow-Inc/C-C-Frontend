@@ -1,0 +1,64 @@
+.AuthPage {
+  display: flex;
+  height: 100vh;
+  justify-content: flex-end;
+  background-size: 50%;
+  background: url('../../assets/Illustration.png') no-repeat left;
+
+  @media screen and (max-width: 600px){
+    flex-direction: column;
+  }
+  &__form-content{
+    position: relative;
+  top: 10rem;
+  }
+  &__heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin: 2rem 0;
+  }
+  &__paragraph{
+    font-size: 1.5rem;
+
+  color: #6c757d;
+  margin: 2rem 0;
+  }
+  &__toggle-trigger{
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1.5rem;
+      margin: 2rem 3rem;
+
+    &:hover{
+      color: aqua;
+    }
+  }
+
+    &__form-content{
+      flex: 0 0 40%;
+    @media screen and (max-width: 600px){
+      background-color: white;
+      border-radius: 5rem 5rem 0 0;
+      }
+    }
+    &__foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    left: 0;
+    top: 3.5rem;
+    &-paragraph {
+      font-size: 1.5rem;
+      color: rgb(218, 218, 218);
+    }
+    &-social {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+      }
+    }
+}

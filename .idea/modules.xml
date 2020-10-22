@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../Pluralsight React/.idea/Pluralsight React.iml" filepath="$PROJECT_DIR$/../../Pluralsight React/.idea/Pluralsight React.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../React Redux/.idea/React Redux.iml" filepath="$PROJECT_DIR$/../../React Redux/.idea/React Redux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../TimeLog/.idea/TimeLog.iml" filepath="$PROJECT_DIR$/../../TimeLog/.idea/TimeLog.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/compare-and-contrast.iml" filepath="$PROJECT_DIR$/.idea/compare-and-contrast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../crwnshop/.idea/crwnshop.iml" filepath="$PROJECT_DIR$/../../crwnshop/.idea/crwnshop.iml" />
     </modules>
   </component>
 </project>
